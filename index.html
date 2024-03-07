@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management System</title>
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+</head>
+<body>
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="index.html"><span class="emp-header">Employee Management System</span></a>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+  
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+
+  <div class="content">
+  <div class="container">
+    <div class="container-heading">
+      <h1>Add Employee Data</h1>
+      <img src="https://png.pngtree.com/png-vector/20220901/ourmid/pngtree-company-employee-avatar-icon-wearing-a-suit-png-image_6133899.png" />
+    </div>
+    <form class="fill-form">
+      <div class="form-containers">
+        <label for="empId" class="label">Employee ID</label>
+        <input type="number" id="empId" class="input">
+      </div>
+      <div class="form-containers">
+        <label for="empName" class="label">Name</label>
+        <input type="text" id="empName" class="input">
+      </div>
+      <div class="form-containers">
+        <label for="empEmail" class="label">Email</label>
+        <input type="email" id="empEmail" class="input">
+      </div>
+      <div class="form-containers">
+        <label for="empDepartment" class="label">Department</label>
+        <select id="empDepartment" class="input">
+          <option value="developer">Developer</option>
+          <option value="designer">Designer</option>
+          <option value="analyst">Analyst</option>
+        </select>
+      </div>
+      <div class="form-containers">
+        <label for="empPlace" class="label">Place</label>
+        <input type="text" id="empPlace" class="input">
+      </div>
+      <div class="form-containers">
+        <label for="empSalary" class="label">Salary</label>
+        <input type="number" id="empSalary" class="input">
+      </div>
+      <div class="submit-button">
+        <input type="submit" value="Add Details" id="add-button">
+      </div>
+    </form>
+  </div>
+  </div>
+  
+  <div id="output" class="card-container"></div>
+
+  <footer class="footer">
+    <div class="social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <ul class="list">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+    </ul>
+    <p class="copyright">Copyright @ 2024</p>
+  </footer>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
