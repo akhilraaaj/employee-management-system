@@ -29,7 +29,6 @@ $(function(){
             card.append("<p>Place: " + place + "</p>");
             card.append("<p>Salary: " + salary + "</p>");
             card.append("<div class='buttons'><button class='edit-button'>Edit</button><button class='delete-button'>Delete</button></div>");
-
             $("#output").append(card);
             $("#empId").val("");
             $("#empName").val("");
@@ -54,14 +53,12 @@ $(function(){
         const department = card.find('p:eq(2)').text().split(':')[1].trim(); 
         const place = card.find('p:eq(3)').text().split(':')[1].trim();
         const salary = card.find('p:eq(4)').text().split(':')[1].trim();
-
         $("#empId").val(empId);
         $("#empName").val(name);
         $("#empEmail").val(email);
         $("#empDepartment").val(department); 
         $("#empPlace").val(place);
         $("#empSalary").val(salary);
-
         card.remove(); 
     });
 });
