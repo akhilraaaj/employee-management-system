@@ -13,7 +13,7 @@ $(function(){
         const department = $("#empDepartment").val(); 
         const place = $("#empPlace").val();
         const salary = $("#empSalary").val();
-
+   
         if (empId === '' || name === '' || email === '' || department === '' || place === '' || salary === '') {
             alert("Please fill all the fields");
         }  
